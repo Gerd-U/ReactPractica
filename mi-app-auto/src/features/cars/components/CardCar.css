@@ -1,0 +1,126 @@
+.card-car {
+  overflow: hidden;
+  border: 1px solid var(--color-line);
+  background: var(--color-black-soft);
+  transition: border-color 180ms ease, transform 180ms ease, box-shadow 180ms ease;
+}
+
+.card-car:hover {
+  border-color: var(--color-gold);
+  box-shadow: 0 16px 36px rgba(0, 0, 0, 0.38);
+  transform: translateY(-4px);
+}
+
+.card-car__media {
+  position: relative;
+  overflow: hidden;
+  aspect-ratio: 1.58;
+  background: #24221e;
+}
+
+.card-car__media img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 400ms ease;
+}
+
+.card-car:hover .card-car__media img {
+  transform: scale(1.035);
+}
+
+.card-car__type,
+.card-car__favorite {
+  position: absolute;
+  top: 14px;
+  display: grid;
+  min-height: 34px;
+  place-items: center;
+  background: rgba(8, 8, 8, 0.88);
+  color: var(--color-gold);
+}
+
+.card-car__type {
+  left: 14px;
+  padding-inline: 12px;
+  color: var(--color-ink);
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.card-car__favorite {
+  right: 14px;
+  width: 34px;
+  color: var(--color-ink);
+  font-size: 1.15rem;
+}
+
+.card-car__body {
+  padding: 20px 21px 18px;
+}
+
+.card-car__location {
+  margin-bottom: 6px;
+  color: var(--color-muted);
+  font-size: 0.75rem;
+}
+
+.card-car__name {
+  margin-bottom: 18px;
+  font-size: 1.55rem;
+}
+
+.card-car__specs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 14px;
+  padding-bottom: 17px;
+  border-bottom: 1px solid var(--color-line);
+  color: var(--color-muted);
+  font-size: 0.73rem;
+}
+
+.card-car__footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding-top: 16px;
+}
+
+.card-car__footer strong {
+  color: var(--color-ink);
+  font-size: 1rem;
+  white-space: nowrap;
+}
+
+.card-car__footer a {
+  color: var(--color-gold);
+  font-size: 0.78rem;
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+.card-car__footer a:hover {
+  color: var(--color-gold-deep);
+}
+
+@media (max-width: 420px) {
+  .card-car__body {
+    padding: 17px;
+  }
+
+  .card-car__footer {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .card-car,
+  .card-car__media img {
+    transition: none;
+  }
+}

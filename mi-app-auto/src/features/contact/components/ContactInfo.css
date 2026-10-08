@@ -1,0 +1,33 @@
+.contact-info {
+  padding: 32px;
+  background: var(--color-black-soft);
+  color: #eee8da;
+}
+
+.contact-info h3 {
+  margin-bottom: 24px;
+  color: var(--color-gold);
+  font-size: 1.65rem;
+}
+
+.contact-info ul {
+  display: grid;
+  gap: 18px;
+  margin: 0;
+  padding: 0;
+  color: #c8beaa;
+  font-size: 0.88rem;
+  list-style: none;
+  overflow-wrap: anywhere;
+}
+
+.contact-info li {
+  padding-bottom: 15px;
+  border-bottom: 1px solid rgba(232, 216, 179, 0.2);
+}
+
+@media (max-width: 600px) {
+  .contact-info {
+    padding: 26px;
+  }
+}

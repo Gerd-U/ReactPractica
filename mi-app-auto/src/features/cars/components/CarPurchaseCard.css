@@ -1,0 +1,34 @@
+.car-purchase-card {
+  position: sticky;
+  top: 106px;
+  padding: 28px;
+  border-top: 3px solid var(--color-gold);
+  background: var(--color-black-soft);
+}
+
+.car-purchase-card p {
+  margin-bottom: 22px;
+  color: var(--color-muted);
+}
+
+.car-purchase-card button {
+  width: 100%;
+  min-height: 48px;
+  border: 0;
+  background: var(--color-gold);
+  color: var(--color-black);
+  cursor: pointer;
+  font-size: 0.86rem;
+  font-weight: 600;
+  transition: background-color 180ms ease;
+}
+
+.car-purchase-card button:hover {
+  background: #ead6a3;
+}
+
+@media (max-width: 800px) {
+  .car-purchase-card {
+    position: static;
+  }
+}

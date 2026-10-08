@@ -1,0 +1,11 @@
+.car-features li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.car-features li::before {
+  color: var(--color-gold);
+  content: '✦';
+  font-size: 0.72rem;
+}

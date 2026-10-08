@@ -1,0 +1,92 @@
+.experience {
+  padding-block: 90px 20px;
+}
+
+.experience__grid {
+  display: grid;
+  min-height: 390px;
+  grid-template-columns: 1fr 0.9fr;
+  background: var(--color-black-soft);
+}
+
+.experience__image {
+  min-height: 390px;
+  background-color: #24211b;
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.24), rgba(0, 0, 0, 0.24)), url('/images/suv.jpg');
+  background-position: center;
+  background-size: cover;
+}
+
+.experience__content {
+  align-self: center;
+  padding: 64px;
+}
+
+.experience__content h2 {
+  max-width: 440px;
+  margin-bottom: 18px;
+  font-size: 2.8rem;
+  color: var(--color-white);
+}
+
+.experience__content > p:not(.eyebrow) {
+  max-width: 450px;
+  color: var(--color-muted);
+}
+
+.check-list {
+  display: grid;
+  gap: 10px;
+  margin: 24px 0;
+  padding: 0;
+  color: var(--color-ink-soft);
+  font-size: 0.9rem;
+  list-style: none;
+}
+
+.check-list li::before {
+  margin-right: 11px;
+  color: var(--color-gold-deep);
+  content: '✓';
+}
+
+.text-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  color: var(--color-black);
+  font-size: 0.88rem;
+  font-weight: 700;
+}
+
+.text-link:hover {
+  color: var(--color-gold-deep);
+}
+
+@media (max-width: 760px) {
+  .experience {
+    padding-top: 64px;
+  }
+
+  .experience__grid {
+    grid-template-columns: 1fr;
+  }
+
+  .experience__image {
+    min-height: 260px;
+  }
+
+  .experience__content {
+    padding: 38px;
+  }
+
+  .experience__content h2 {
+    font-size: 2.4rem;
+  }
+}
+
+@media (max-width: 420px) {
+  .experience__content {
+    padding: 28px 22px;
+  }
+}
