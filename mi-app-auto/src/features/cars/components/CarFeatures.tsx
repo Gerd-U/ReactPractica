@@ -1,16 +1,18 @@
 import './CarFeatures.css'
 
-const features = ['Automatico', 'GPS', 'Bluetooth', 'Aire acondicionado']
+interface CarFeaturesProps {
+  features: string[]
+}
 
-export default function CarFeatures() {
+export default function CarFeatures({ features }: CarFeaturesProps) {
   return (
-    <section className="car-features">
-      <h3>Características</h3>
-      <ul>
+    <>
+      <h2>Características</h2>
+      <ul className="car-features">
         {features.map((feature) => (
-          <li key={feature}>{feature}</li>
+          <li key={feature}>✓ {feature}</li>
         ))}
       </ul>
-    </section>
+    </>
   )
 }

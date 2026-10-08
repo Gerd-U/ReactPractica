@@ -9,7 +9,7 @@
     "mileage": 12500,
     "seats": 7,
     "type": "SUV",
-    "image": "/images/suv.jpg",
+    "image": "/images/aurora-x7.jpg",
     "featured": true,
     "description": "SUV versátil con espacio para siete pasajeros y equipamiento pensado para viajes largos.",
     "features": [
@@ -28,7 +28,7 @@
     "mileage": 18200,
     "seats": 5,
     "type": "Sedán",
-    "image": "/images/sedan.jpg",
+    "image": "/images/mistral-s.jpg",
     "featured": true,
     "description": "Sedán cómodo para la ciudad, con una conducción suave y una cabina espaciosa.",
     "features": [
@@ -47,7 +47,7 @@
     "mileage": 7000,
     "seats": 4,
     "type": "Deportivo",
-    "image": "/images/deportivo.jpg",
+    "image": "/images/vento-gt.jpg",
     "featured": true,
     "description": "Diseño deportivo con detalles de alto contraste y respuesta ágil.",
     "features": [
@@ -66,7 +66,7 @@
     "mileage": 3900,
     "seats": 5,
     "type": "Eléctrico",
-    "image": "/images/electrico.jpg",
+    "image": "/images/lumen-e.jpg",
     "featured": false,
     "description": "Modelo eléctrico con interior moderno y conducción silenciosa.",
     "features": [
@@ -85,7 +85,7 @@
     "mileage": 26800,
     "seats": 7,
     "type": "SUV",
-    "image": "/images/suv.jpg",
+    "image": "/images/terran-family.jpg",
     "featured": false,
     "description": "SUV familiar con tercera fila y espacio de carga adaptable.",
     "features": [
@@ -104,7 +104,7 @@
     "mileage": 21500,
     "seats": 5,
     "type": "Sedán",
-    "image": "/images/sedan.jpg",
+    "image": "/images/norte-city.jpg",
     "featured": false,
     "description": "Sedán compacto de fácil manejo para trayectos cotidianos.",
     "features": [
@@ -123,7 +123,7 @@
     "mileage": 14600,
     "seats": 5,
     "type": "Crossover",
-    "image": "/images/suv.jpg",
+    "image": "/images/sierra-cross.jpg",
     "featured": false,
     "description": "Crossover para recorridos urbanos y escapadas de fin de semana.",
     "features": [
@@ -142,7 +142,7 @@
     "mileage": 6200,
     "seats": 5,
     "type": "Híbrido",
-    "image": "/images/sedan.jpg",
+    "image": "/images/brisa-hybrid.jpg",
     "featured": false,
     "description": "Sedán híbrido con una cabina cómoda y equipamiento para el uso diario.",
     "features": [
@@ -161,7 +161,7 @@
     "mileage": 8500,
     "seats": 2,
     "type": "Deportivo",
-    "image": "/images/sport.jpg",
+    "image": "/images/elite-sport.jpg",
     "featured": false,
     "description": "Deportivo de dos plazas con una conducción ágil y acabados elegantes.",
     "features": [
@@ -180,7 +180,7 @@
     "mileage": 4100,
     "seats": 5,
     "type": "Eléctrico",
-    "image": "/images/electrico.jpg",
+    "image": "/images/nova-electric.jpg",
     "featured": false,
     "description": "Auto eléctrico de cinco plazas con tecnología práctica para cada viaje.",
     "features": [
@@ -199,7 +199,7 @@
     "mileage": 32400,
     "seats": 5,
     "type": "Sedán",
-    "image": "/images/sedan.jpg",
+    "image": "/images/pacifico-comfort.jpg",
     "featured": false,
     "description": "Sedán de uso diario con amplio espacio interior y conducción confortable.",
     "features": [
@@ -218,7 +218,7 @@
     "mileage": 23700,
     "seats": 7,
     "type": "SUV",
-    "image": "/images/suv.jpg",
+    "image": "/images/monte-verde.jpg",
     "featured": false,
     "description": "SUV de siete pasajeros con espacio adaptable para la familia.",
     "features": [

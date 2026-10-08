@@ -1,23 +1,21 @@
+import { Link } from 'react-router-dom'
+import type { Car } from '../types/Car'
 import './CarInfo.css'
 
-type CarInfoProps = {
-  brand?: string
-  year?: number
-  mileage?: string
+interface CarInfoProps {
+  car: Car
 }
 
-export default function CarInfo({
-  brand = 'BMW',
-  year = 2024,
-  mileage = '18.000 km',
-}: CarInfoProps) {
+export default function CarInfo({ car }: CarInfoProps) {
   return (
     <section className="car-info">
+      <Link to="/cars">← Volver a autos</Link>
       <h3>Información del vehículo</h3>
       <ul>
-        <li>Marca: {brand}</li>
-        <li>Año: {year}</li>
-        <li>Kilometraje: {mileage}</li>
+        <li>Modelo: {car.name}</li>
+        <li>Tipo: {car.type}</li>
+        <li>Año: {car.year}</li>
+        <li>Kilometraje: {car.mileage.toLocaleString('es-CR')} km</li>
       </ul>
     </section>
   )

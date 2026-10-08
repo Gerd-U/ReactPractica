@@ -1,34 +1,57 @@
-.car-purchase-card {
+.purchase-card {
   position: sticky;
   top: 106px;
   padding: 28px;
+  border: 1px solid var(--color-line);
   border-top: 3px solid var(--color-gold);
   background: var(--color-black-soft);
 }
 
-.car-purchase-card p {
-  margin-bottom: 22px;
+.purchase-card__label {
+  margin-bottom: 8px;
   color: var(--color-muted);
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
 }
 
-.car-purchase-card button {
+.purchase-card__price {
+  margin-bottom: 12px;
+  color: var(--color-gold);
+  font-size: clamp(1.6rem, 2.4vw, 2rem);
+}
+
+.purchase-card__description {
+  margin-bottom: 22px;
+  color: var(--color-muted);
+  font-size: 0.88rem;
+}
+
+.purchase-card__button {
+  display: flex;
   width: 100%;
   min-height: 48px;
-  border: 0;
+  align-items: center;
+  justify-content: center;
+  padding: 12px 16px;
+  border: 1px solid transparent;
   background: var(--color-gold);
   color: var(--color-black);
   cursor: pointer;
   font-size: 0.86rem;
   font-weight: 600;
+  text-align: center;
+  text-decoration: none;
   transition: background-color 180ms ease;
 }
 
-.car-purchase-card button:hover {
+.purchase-card__button:hover {
   background: #ead6a3;
 }
 
 @media (max-width: 800px) {
-  .car-purchase-card {
+  .purchase-card {
     position: static;
   }
 }

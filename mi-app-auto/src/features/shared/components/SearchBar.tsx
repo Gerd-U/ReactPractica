@@ -1,9 +1,37 @@
-export default function SearchBar() {
+import './SearchBar.css'
+
+type SearchBarProps = {
+  search: string
+  onSearchChange: (value: string) => void
+}
+
+export default function SearchBar({ search, onSearchChange }: SearchBarProps) {
   return (
-    <form>
-      <label htmlFor="search">Buscar</label>
-      <input id="search" type="search" placeholder="Busca tu coche" />
-      <button type="submit">Buscar</button>
-    </form>
+    <label className="search-bar">
+      <span className="search-bar__label">Encuentra tu próximo auto</span>
+      <span className="search-bar__field">
+        <svg
+          className="search-bar__icon"
+          width="20"
+          height="20"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          strokeWidth="1.5"
+          strokeLinecap="round"
+          aria-hidden="true"
+        >
+          <circle cx="10.5" cy="10.5" r="6.5" />
+          <path d="m16 16 4.5 4.5" />
+        </svg>
+        <input
+          className="search-bar__input"
+          type="search"
+          placeholder="Buscar auto por nombre..."
+          value={search}
+          onChange={(event) => onSearchChange(event.target.value)}
+        />
+      </span>
+    </label>
   )
 }

@@ -1,18 +1,17 @@
+import type { Car } from '../types/Car'
 import './CarHero.css'
 
-type CarHeroProps = {
-  title?: string
-  subtitle?: string
+interface CarHeroProps {
+  car: Car
 }
 
-export default function CarHero({
-  title = 'Tu próximo coche',
-  subtitle = 'Descubre opciones premium con tecnología y estilo.',
-}: CarHeroProps) {
+export default function CarHero({ car }: CarHeroProps) {
   return (
-    <header className="car-hero">
-      <h1>{title}</h1>
-      <p>{subtitle}</p>
-    </header>
+    <div className="car-hero">
+      <img
+        src={car.image}
+        alt={`Foto referencial de ${car.type} para ${car.name}`}
+      />
+    </div>
   )
 }

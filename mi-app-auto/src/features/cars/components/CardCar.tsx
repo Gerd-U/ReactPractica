@@ -10,7 +10,12 @@ export default function CardCar({ car }: CardCarProps) {
   return (
     <article className="card-car">
       <div className="card-car__media">
-        <img src={car.image} alt={`Ilustración de ${car.name}`} />
+        <img
+          src={car.image}
+          alt={`Foto referencial de ${car.type} para ${car.name}`}
+          loading="lazy"
+          decoding="async"
+        />
         <span className="card-car__type">{car.type}</span>
         <span className="card-car__favorite" aria-hidden="true">♡</span>
       </div>
